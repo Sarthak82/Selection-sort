@@ -1,0 +1,22 @@
+#selection sort
+def sort(nums):
+    #for min value we go from low to high index
+    for i in range(len(nums)-1):
+    #variable which will hold postion of min value 
+        minpos=i
+    # we go from i to size of array
+        for j in range(i,len(nums)):
+    #comparing value
+            if nums[j]<nums[minpos]:
+                minpos=j
+        temp=nums[i]
+        nums[i]=nums[minpos]
+        nums[minpos]=temp
+        
+        
+nums=[5,3,8,6,7,2]
+sort(nums)
+print(nums)
+
+
+
