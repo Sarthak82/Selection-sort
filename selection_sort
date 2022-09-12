@@ -18,5 +18,20 @@ nums=[5,3,8,6,7,2]
 sort(nums)
 print(nums)
 
+#selection sort for minimum element
+def sort(nums):
+    for i in range(len(nums)):
+        low=i
+        for j in range(i+1,len(nums)):
+            if nums[j]<nums[low]:
+                low=j
+        nums[low],nums[i]=nums[i],nums[low]
+    return list
+
+list=[1,6,2,4,8,3,1,9,2]
+print(sort(list))
+
+# i is for iteration number
+#j ins for the current element
 
 
